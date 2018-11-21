@@ -10,29 +10,122 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font-family: Georgia, sans-serif;
+  font: normal 100%/1.3 sans-serif;
+  list-style-type: none;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+li {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 50px;
 }
 
+.card {
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.card-body {
+  margin-top: 0;
+}
+
+.image-wrap {
+  text-align: center;
+}
+
 @media only screen and (min-width: 25em) {
+
+  li {
+  display: flex;
+  }
+
+  .card-img g {
+    text-align: left;
+    padding-right: .5em;
+  }
+
+  .card {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+  font-size: 1rem;
+  line-height: 1rem;
+  }
+
+  .cards-img img {
+
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  .image-wrap {
+    text-align: center;
+  }
+
+  .card, .card-info {
+    margin-top: 0;
+    display: inline-block;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
+  html {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  .image-wrap {
+    text-align: center;
+  }
+
+  .card, .card-info {
+    margin-top: 0;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 1.5rem;
+  }
+
+  li {
+  display: flex;
+  }
+
+  .image-wrap {
+    text-align: left;
+    padding-right: .5em;
+  }
+
+  .card, .card-info {
+    margin-top: 0;
+  }
 
 }
