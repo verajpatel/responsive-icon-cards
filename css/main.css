@@ -66,24 +66,23 @@ img {
 
   html {
   font-size: 1rem;
-  line-height: 1rem;
-  }
-
-  .cards-img img {
-
+  line-height: 1.5rem;
   }
 
   li {
     display: inline-block;
   }
 
-  .image-wrap {
+  ul {
+    display: flex;
+  }
+
+  .card-img img {
     text-align: center;
   }
 
   .card, .card-info {
     margin-top: 0;
-    display: inline-block;
   }
 
 }
@@ -91,7 +90,7 @@ img {
 @media only screen and (min-width: 60em) {
 
   html {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.5rem;
   }
 
@@ -111,12 +110,8 @@ img {
 
 @media only screen and (min-width: 90em) {
 
-  html {
-    font-size: 1.5rem;
-  }
-
   li {
-  display: flex;
+    display: flex;
   }
 
   .image-wrap {
